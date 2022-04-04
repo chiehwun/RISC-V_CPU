@@ -3,7 +3,13 @@
 ## Requirements
 
 - Implement ALU and decoder module and make your codes be able to execute all RISC-V instructions.
-- Verify the design using ModelSim
+- Verify the design using `ModelSim PE Student Edition 10.4a`
+
+<br>
+<div align=center>
+<img src="https://github.com/chiehwun/RISC-V_CPU/blob/main/img/modelsim-version.png">
+</div>
+<br>
 
 ### Instruction Format
 
