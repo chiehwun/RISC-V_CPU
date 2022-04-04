@@ -109,7 +109,7 @@ Here are the wires:
 
 <br>
 <div align=center>
-<img src="https://github.com/chiehwun/RISC-V_CPU/blob/main/img/register-layout.png">
+<img src="https://github.com/chiehwun/RISC-V_CPU/blob/main/img/register-file.png">
 </div>
 <br>
 
@@ -148,3 +148,51 @@ This program start after setup.S, it will verify all RISC-V instructions (31 ins
 Using the cross compiler of RISC-V to compile test program, and write result in verilog format. So you do not need to compile above program again.
 
 #### Simulation Result
+
+| Register | Value (hex) |
+| -------- | ----------- |
+| DM[ 0]   | `fffffff0`  |
+| DM[ 1]   | `fffffff8`  |
+| DM[ 2]   | `00000008`  |
+| DM[ 3]   | `00000001`  |
+| DM[ 4]   | `00000001`  |
+| DM[ 5]   | `78787878`  |
+| DM[ 6]   | `000091a2`  |
+| DM[ 7]   | `00000003`  |
+| DM[ 8]   | `fefcfefd`  |
+| DM[ 9]   | `10305070`  |
+| DM[ 10]  | `cccccccc`  |
+| DM[ 11]  | `ffffffcc`  |
+| DM[ 12]  | `ffffcccc`  |
+| DM[ 13]  | `000000cc`  |
+| DM[ 14]  | `0000cccc`  |
+| DM[ 15]  | `00000d9d`  |
+| DM[ 16]  | `00000004`  |
+| DM[ 17]  | `00000003`  |
+| DM[ 18]  | `000001a6`  |
+| DM[ 19]  | `00000ec6`  |
+| DM[ 20]  | `2468b7a8`  |
+| DM[ 21]  | `5dbf9f00`  |
+| DM[ 22]  | `00012b38`  |
+| DM[ 23]  | `fa2817b7`  |
+| DM[ 24]  | `ff000000`  |
+| DM[ 25]  | `12345678`  |
+| DM[ 26]  | `0000f000`  |
+| DM[ 27]  | `00000f00`  |
+| DM[ 28]  | `000000f0`  |
+| DM[ 29]  | `0000000f`  |
+| DM[ 30]  | `56780000`  |
+| DM[ 31]  | `78000000`  |
+| DM[ 32]  | `00005678`  |
+| DM[ 33]  | `00000078`  |
+| DM[ 34]  | `12345678`  |
+| DM[ 35]  | `ce780000`  |
+| DM[ 36]  | `fffff000`  |
+| DM[ 37]  | `fffff000`  |
+| DM[ 38]  | `fffff000`  |
+| DM[ 39]  | `fffff000`  |
+| DM[ 40]  | `fffff000`  |
+| DM[ 41]  | `fffff000`  |
+| DM[ 42]  | `1357a064`  |
+| DM[ 43]  | `13578000`  |
+| DM[ 44]  | `fffff004`  |
