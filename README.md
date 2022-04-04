@@ -64,13 +64,13 @@
 
 #### Module
 
-##### top_tb module
+##### `top_tb` module
 
-“top_tb” is not a part of CPU, it is a file that controls all the program and verify the correctness of our CPU. The main features are as follows: send periodical signal CLK to CPU, set the initial value of IM, print the value of DM, end the program.
+`top_tb` is not a part of CPU, it is a file that controls all the program and verify the correctness of our CPU. The main features are as follows: send periodical signal CLK to CPU, set the initial value of IM, print the value of DM, end the program.
 
-##### top module
+##### `top` module
 
-“top” is the outmost module. It is responsible for connecting wires between CPU, IM and DM.
+`top` is the outmost module. It is responsible for connecting wires between CPU, IM and DM.
 Here are the wires:
 **※ The ordering of bytes is little-endian.**
 
@@ -83,9 +83,9 @@ Here are the wires:
 - `data_in` represents the data which will be wrote into DM.
 - `data_out` represents the data send from DM.
 
-##### SRAM module
+##### `SRAM` module
 
-“SRAM” is the abbreviation of “Instruction Memory” (or “Data Memory”). This module saves all the instructions (or data) and send instruction (or data) to CPU according to request.
+`SRAM` is the abbreviation of “Instruction Memory” (or “Data Memory”). This module saves all the instructions (or data) and send instruction (or data) to CPU according to request.
 
 <br>
 <div align=center>
@@ -93,9 +93,9 @@ Here are the wires:
 </div>
 <br>
 
-##### CPU module
+##### `CPU` module
 
-“CPU” is responsible for connecting wires between modules, please design a RISC-V CPU by yourself. You can write other modules in other files if you need, but remember to include those files in CPU.v.
+`CPU` is responsible for connecting wires between modules, please design a RISC-V CPU by yourself. You can write other modules in other files if you need, but remember to include those files in CPU.v.
 
 #### Reference Block Diagram
 
@@ -132,7 +132,7 @@ Here are the wires:
 
 ##### `setup.S`
 
-This program start at “PC = 0”, execute function as followings:
+This program start at "PC = 0", execute function as followings:
 
 1. Reset register file
 2. Initial stack pointer and sections
